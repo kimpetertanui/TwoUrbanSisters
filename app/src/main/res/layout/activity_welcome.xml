@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:background="@drawable/bg_img"
+    tools:context=".WelcomeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="Suspicious0dp">
+
+        <Button
+            android:id="@+id/btn_customer"
+            android:layout_width="match_parent"
+            android:background = "@drawable/roundedbutton"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/holo_blue_bright"
+            android:text="@string/customer"/>
+        <Button
+            android:id="@+id/btn_seller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_customer"
+            android:background = "@drawable/roundedbutton"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/holo_blue_bright"
+            android:text="@string/seller"/>
+    </RelativeLayout>
+
+</LinearLayout>
